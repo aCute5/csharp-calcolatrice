@@ -131,9 +131,8 @@ public static  class HelperCalc
         {
             return 1;
         }
-        else if (exponent < 0)
-            {
-                return _base * NOLoopPower(_base , exponent);
+        else if(exponent < 0){
+                return _base * 1 / NOLoopPower(_base, --exponent);
             }
         else
         {
