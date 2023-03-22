@@ -1,40 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.ComponentModel;
+using csharp_calcolatrice;
 
 Console.WriteLine("Hello, World!");
 
+int num1 = 2;
+int num2 = 5;
 
-public class HelperCalc
-{
-    public static int Add(int a, int b)
-    {
-        return a + b;
-    }
-    public static double Add(double a,double b)
-    {
-        return a + b;
-    }
-    public static double Sottr(double a,double b)
-    {
-        return a - b;
-    }
-    public static int Sottr(int a,int b)
-    {
-        return a - b;
-    }
-    public static int Molt(int a,int b)
-    {
-        return a * b;
-    }
-    public static double Molt(int a,double b)
-    {
-        return a * b;
-    }
-    public static double Absolute(double a, double b)
-    {
-        if(a == 0)
-        {
-           a = 0
-        }
-    }
-}
+Console.WriteLine(HelperCalc.Min(num1, num2));
+Console.WriteLine(HelperCalc.Max(num1, num2));
+Console.WriteLine(HelperCalc.Add(num1, num2));
+Console.WriteLine(HelperCalc.Sottr(num1, num2));
+Console.WriteLine(HelperCalc.Absolute(num1));
+Console.WriteLine(HelperCalc.Power(num1, num2));
+Console.WriteLine(HelperCalc.NOLoopPower(num1, num2));
+
+
